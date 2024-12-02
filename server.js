@@ -17,7 +17,7 @@ connectCloudinary();
 // middlewares
 app.use(express.json());
 const allowedOrigins = [
-  "https://admin-test-9tq8lp1f9-aof-arthits-projects.vercel.app/",
+  "https://admin-test-beta.vercel.app",
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:5175", // For local development
