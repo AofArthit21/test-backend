@@ -17,7 +17,9 @@ connectCloudinary();
 // middlewares
 app.use(express.json());
 const allowedOrigins = [
-  "https://artnakkk-frontend-admin.vercel.app",
+  "https://admin-test-9tq8lp1f9-aof-arthits-projects.vercel.app/",
+  "http://localhost:5173",
+  "http://localhost:5174",
   "http://localhost:5175", // For local development
   "http://localhost:5176", // For local development
 ];
@@ -47,4 +49,4 @@ app.use("/api/order", orderRouter);
 app.get("/", (req, res) => {
   res.send("API Working");
 });
-app.listen(port, () => console.log(`Server started on PORT : ${port} :star2:`));
+app.listen(port, () => console.log(`Server started on PORT : ${port}`));
